@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text Similarity</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav-wrapper">
+
+		<!-- Link around dots-wrapper added after tutorial video -->
+		<a href="index.html">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+		<ul id="navigation">
+			<li><a href="index.html#contact">Contact</a></li>
+
+		</ul>
+	</div>
+
+	<div class="main-container">
+		<br>
+
+		<div class="img-container">
+			<img src="images/dash.jpg">
+		</div>
+		
+		<h3>Text Similarity API</h3>
+
+		<p>Este proyecto fue iniciado este año (2020) como un ejercicio para implementar de manera productiva un servicio usando un modelo pre-entrenado, en este caso de NLP e implementarlo en mi universidad para que los profesores pudieran detectar tareas copiadas.
+		<br>
+		<br>
+		Con esta API el usuario puede ingresar dos archivos de texto y conocer su similitud. La Api también cuenta con validadción de usuario y un sistema de tokens que sirven como metodo de "pago", aun que el objetivo no es el cobro, me parecio una buena practica para limitar su uso.
+		<br>
+		<br>
+		Este proyecto se encuentra en su primer versio y aun no esta implementado en ningun servidor. Todo esta dentro de un conteiner de docker para su protabilidad, se implementa un base de datos no relacional y un modelo pre-entrenado de NLP de uso libre de la gente de spaCy.	
+		<br>
+		<br>
+		El usuario deberá registrarse, al registrarse obtendra un numero de tokens, si el nombre de usuario esta disponible puede continuar. Ahora debe validar la entrada con su nombre de usuario y contraseña para poder hacer uso de la Api, una vez validado puede ingresar los dos textos y recibira un valor cuantitativo de 0 a 1, donde estos valores representan el porcentaje de similitud en los textos.
+		<br>
+		<br>
+		Esta API se puede considerar con un servicio back-end parte de un proyecto mas grande.</p>
+
+		<h5>Tecnologias:</h5>
+		<ul>
+			<li>- Python</li>
+			<li>- Flask</li>
+			<li>- Mongo DB</li>
+			<li>- Docker</li>
+			<li>- PostMan</li>
+		</ul>
+
+
+		<h5>Registro</h5>
+		<div class="img-container">
+			<img src="images/lab-dash.jpg">
+		</div>
+
+		<h6>Validación</h5>
+		<div class="img-container">
+			<img src="images/sample-form.jpg">
+		</div>
+
+		<h5>Input</h5>
+		<div class="img-container">
+			<img src="images/results.jpg">
+		</div>
+
+		<h5>Output</h5>
+		<div class="img-container">
+			<img src="images/pdf-report.jpg">
+		</div>
+
+		<h5>Customer Dashboard</h5>
+		<div class="img-container">
+			<img src="images/customer-dash.jpg">
+		</div>
+
+	</div>
+
+</body>
+</html>
